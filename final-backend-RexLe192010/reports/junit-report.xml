@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="8" time="1.855">
+ <testsuite name="Validate headline functionality" timestamp="2024-11-22T16:33:27" hostname="localhost" time="0.72" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validate headline functionality" name="should update the headline of the logged-in user" time="0.101" />
+ </testsuite>
+ <testsuite name="Validate auth functionality" timestamp="2024-11-22T16:33:28" hostname="localhost" time="0.297" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validate auth functionality" name="should register, login, and logout the user sequentially" time="0.296" />
+ </testsuite>
+ <testsuite name="Validate articles functionality" timestamp="2024-11-22T16:33:28" hostname="localhost" time="0.838" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validate articles functionality" name="should fetch the article by ID" time="0.106" />
+  <testcase classname="Validate articles functionality" name="should fetch all articles by the logged-in user" time="0.093" />
+  <testcase classname="Validate articles functionality" name="should update the text of an article" time="0.101" />
+  <testcase classname="Validate articles functionality" name="should add a comment to the article" time="0.099" />
+  <testcase classname="Validate articles functionality" name="should not create an article without text" time="0.089" />
+  <testcase classname="Validate articles functionality" name="should return 404 for a non-existing article" time="0.094" />
+ </testsuite>
+</testsuites>
