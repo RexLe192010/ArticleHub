@@ -1,0 +1,220 @@
+/* Main.css */
+
+.main-view {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #282c34;
+}
+
+.profile-button,
+.logout-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.profile-button:hover,
+.logout-button:hover {
+    background-color: #21a1f1;
+}
+
+.content-area {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f2f5;
+    gap: 20px;
+    /* Adds consistent spacing between user-info, articles-container, and sidebar-container */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 15%;
+    /* Set the basis width of user-info to 15% */
+    flex-grow: 0;
+    /* Prevent user-info from growing */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 80px;
+    /* Reduce the size of the avatar */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.headline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.headline-section h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    /* Reduce the font size */
+}
+
+.edit-headline-button,
+.save-headline-button,
+.cancel-headline-button {
+    padding: 6px 12px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+.edit-headline-button:hover,
+.save-headline-button:hover,
+.cancel-headline-button:hover {
+    background-color: #21a1f1;
+}
+
+.headline-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.articles-container {
+    flex-basis: 60%;
+    /* Set the basis width of articles-container to 60% */
+    flex-grow: 1;
+    /* Allow articles-container to grow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-article-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.add-article-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    height: 100px;
+    resize: vertical;
+}
+
+.add-article-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.add-article-button:hover {
+    background-color: #218838;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.sidebar-container {
+    flex-basis: 25%;
+    /* Set the basis width of sidebar-container to 25% */
+    flex-grow: 0;
+    /* Prevent sidebar-container from growing */
+}
+
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+    }
+
+    .user-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .headline-section {
+        align-items: flex-start;
+    }
+
+    .headline-section h2 {
+        margin-bottom: 10px;
+    }
+
+    .edit-headline-button,
+    .save-headline-button,
+    .cancel-headline-button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .add-article-section {
+        padding: 10px;
+    }
+
+    .add-article-button {
+        width: 100%;
+    }
+
+    .articles-container {
+        width: 100%;
+    }
+
+    .sidebar-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

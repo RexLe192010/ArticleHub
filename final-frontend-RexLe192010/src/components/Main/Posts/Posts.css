@@ -1,0 +1,166 @@
+/* Container for all posts */
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    /* Ensure posts-container takes up the full width of its parent */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual post styling */
+.post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+}
+
+/* Title styling */
+.post h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Body styling */
+.post p {
+    margin: 0 0 15px;
+    color: #555;
+    line-height: 1.5;
+    word-wrap: break-word;
+    /* Ensure long words break and wrap to the next line */
+    word-break: break-word;
+    /* Ensure long words break and wrap to the next line */
+}
+
+/* Image styling */
+.post img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.comment-button,
+.edit-button,
+.save-button,
+.save-comment-button,
+.edit-comment-button,
+.add-comment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+.comment-button:hover,
+.edit-button:hover,
+.save-button:hover,
+.save-comment-button:hover,
+.edit-comment-button:hover,
+.add-comment-button:hover {
+    background-color: #0056b3;
+}
+
+/* Comments section styling */
+.comments-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    margin: 0;
+    color: #555;
+    word-wrap: break-word;
+    /* Ensure long words break and wrap to the next line */
+    word-break: break-word;
+    /* Ensure long words break and wrap to the next line */
+}
+
+.comment strong {
+    color: #333;
+}
+
+/* Add comment container styling */
+.add-comment-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .posts-container {
+        padding: 10px;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    .post h3 {
+        font-size: 1.25rem;
+    }
+
+    .comment-button,
+    .edit-button,
+    .save-button,
+    .save-comment-button,
+    .edit-comment-button,
+    .add-comment-button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .add-comment-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .comment-input {
+        margin-bottom: 10px;
+    }
+}

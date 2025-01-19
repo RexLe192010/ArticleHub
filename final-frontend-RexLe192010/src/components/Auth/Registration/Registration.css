@@ -1,0 +1,85 @@
+/* src/components/Auth/Registration/Registration.css */
+
+/* Container styling for the registration form */
+.registration-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the form */
+.registration-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.registration-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.registration-container label {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Input field styling */
+.registration-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Input field focus effect */
+.registration-container input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button styling */
+.registration-container button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Reset button styling */
+.registration-container button[type="reset"] {
+    background-color: #dc3545;
+}
+
+/* Button hover effect */
+.registration-container button:hover {
+    background-color: #218838;
+}
+
+.registration-container button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Error message styling (you can display this conditionally if you have error states) */
+.registration-container .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
